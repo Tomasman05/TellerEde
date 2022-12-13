@@ -1,4 +1,5 @@
 body {
+  background: url(./physics_back.jpg);
   background-size: cover;
   font-weight: 500;
 }
@@ -10,7 +11,12 @@ p {
   text-align: justify;
   
 }
-
+span {
+  font-weight: 800;
+}
+span:hover {
+  color: red;
+}
 #tartalom {
   background-color: rgba(200, 200, 200, 0.85);
   border-radius: 30px;
@@ -19,16 +25,36 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
-h1 {
-  font-style: italic;
+img {
+  float: right;
+  width: 260px;
+  margin-left: 20px;
 }
-
+h1 a {
+  font-style: italic;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
 table {
   width: 50%;
   margin: auto;
 }
-
+td, th{
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  color: white;
+  background-color: grey;
+}
 ul {
   list-style-image: url('physics_icon.png');
+}
+img::after{
+  clear: both;
+  content: "";
+  display: table;
 }
