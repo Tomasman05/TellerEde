@@ -47,8 +47,12 @@ td, th{
   text-align: center;
 }
 th {
-  color: white;
-  background-color: grey;
+  color: white!important;
+  background-color: grey!important;
+  border-bottom: 1px solid white!important;
+}
+table tr:last-child th{
+  border-bottom: none!important;
 }
 ul {
   list-style-image: url('physics_icon.png');
